@@ -1,0 +1,84 @@
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+p{
+    text-align: center;
+    font-size: 22px;
+    font-style: initial;
+    color: #FFF;
+}
+.box1{
+    width: 100px;
+    height: 100px;
+    background-color: springgreen;
+    animation: changbox1 15s 3s infinite;
+}
+@keyframes changbox1 {
+    0%   {
+        background-color: red;
+    }
+    25%   {
+        background-color: blue;
+    }
+    50%   {
+        background-color: yellow;
+    }
+    75%   {
+        background-color: blueviolet;
+    }
+    100%   {
+        background-color:palevioletred;
+    }  
+  }
+.box2{
+    width: 100px;
+    height: 100px;
+    background-color: rgb(28, 141, 0);
+    animation-name: changbox;
+    animation: changbox2 4s 3s infinite;
+}
+@keyframes changbox2 {
+    0%   {
+        opacity: 0;
+    }
+    25%   {
+        opacity: 0.25; 
+    }
+    50%   {
+        opacity: 0.5;
+    }
+    75%   {
+        opacity: 0.75;
+    }
+    100%   {
+        opacity: 1;
+    }  
+  }
+.box3{
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    /* animation: changbox3 alternate 5s 2s infinite; */
+    animation: changbox3 reverse 5s 2s infinite;
+
+}
+@keyframes changbox3 {
+    0%   {
+        margin-left: 0px;
+    }
+    25%   {
+        margin-left: 100px; 
+    }
+    50%   {
+        margin-left: 200px;
+    }
+    75%   {
+        margin-left: 300px;
+    }
+    100%   {
+        margin-left: 400px; 
+    }  
+  }
